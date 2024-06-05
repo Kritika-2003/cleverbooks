@@ -1,0 +1,351 @@
+/* Navbar styles */
+.navbar {
+    /* background-color:black!important ;Light background */
+    padding: 1rem;
+  }
+  
+  /* Navbar brand (logo) */
+  .navbar-brand {
+   height: 100px;
+   margin-left: 300px;
+   margin-right: 5px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .navbar-brand {
+      max-width: 80px; /* Adjust for tablet size */
+    }
+    
+    .custom-nav .nav-link {
+      padding: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar-brand {
+      max-width: 60px; /* Adjust for mobile size */
+    }
+    
+    .custom-nav .nav-link {
+      padding: 3px;
+    }
+  
+    .btn-outline-success {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+
+
+  /* Navbar links */
+  .nav-link {
+    color:white; /* Default link color */
+    margin-right: 3rem;
+    font-size: 30px; 
+    margin-left :0px;
+    text-align: left;
+   
+  }
+  .nav-link1 {
+    color:#b919dd;/* Default link color */
+    margin-left: 50rem;
+    font-size: 35px;
+
+     
+   
+  }
+
+.navbar-toggler{
+  background-color: #f1f1f1 ; /* Remove border */
+
+}
+
+  
+  .nav-link:hover {
+    color: rgb(230, 97, 20); /* Color on hover */
+  }
+  
+  /* Active link */
+  .nav-item.active .nav-link {
+    color: #007bff; /* Color for active link */
+  }
+  
+  /* Dropdown menu items */
+  .dropdown-item {
+    color: #333; /* Default color */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f1f1f1; /* Background on hover */
+    color: #000; /* Text color on hover */
+  }
+  
+  /* Disabled link */
+  .nav-link.disabled {
+    color: #aaa; /* Color for disabled link */
+  }
+  
+  /* Search form */
+  
+  
+  .btn-outline-success {
+    background: linear-gradient(to right, #db6226, #8419dd); /* Button text color */
+   border-radius: 30px;
+   height: 80px;
+   width: 200px;
+   color:rgb(246, 237, 237);
+   font-size: 25px;
+    border-color: #ededed00;
+     /* Button border color */
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #28a74600; /* Button background on hover */
+    color: #fff; /* Button text color on hover */
+  }
+
+  .background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    display:flex;
+     justify-content: center; 
+    align-items: center;
+  }
+  
+  
+  /* Style for the hero image */
+   .hero{
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+    max-width: 100%; 
+
+  }
+
+
+ 
+ 
+
+  .herosec {
+    padding: 20px;
+    text-align: center; /* Center the text */
+    
+  }
+  
+  /* Styles for the text inside herosec */
+  .herosec1 {
+    font-size: 60px; /* Increase the base font size */
+    margin: 0; /* Remove default margin */
+    line-height: 1.8; /* Improve line height for readability */
+  }
+
+  @media (max-width: 768px) {
+    .herosec {
+      padding: 15px;
+    }
+  
+    .herosec1 {
+      font-size: 1.2rem; /* Reduce font size for smaller screens */
+    }
+  }
+  
+  /* Media query for very small screens */
+  @media (max-width: 480px) {
+    .herosec {
+      padding: 10px;
+    }
+  
+    .herosec1 {
+      font-size: 1rem; /* Further reduce font size for very small screens */
+    }
+  }
+
+
+  /* styles.css */
+
+/* Style for the cards container */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next row */
+  gap: 20px; /* Space between the cards */
+  justify-content: center; /* Center cards in the container */
+  padding: 20px; /* Add some padding around the container */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Style for the card */
+.card {
+  flex: 1 1 40rem; /* Allow cards to grow and shrink, set a base width */
+  max-width: 22rem; /* Set a maximum width for the cards */
+  margin: 10px; /* Add margin around each card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensure the content doesn't overflow */
+  background-color: white; /* Ensure the background is white */
+  display: flex;
+  background-color: #d280df31;
+  flex-direction: column; /* Ensure that the card content is aligned vertically */
+}
+
+/* Style for the card image */
+.cardimage {
+  height: 200px;
+    width:200px; /* Maintain the aspect ratio */
+  border-top-left-radius: 10px; /* Match the border radius of the card */
+  border-top-right-radius: 10px; /* Match the border radius of the card */
+}
+
+/* Style for the card body */
+.card-body {
+  padding: 40px; /* Add padding inside the card */
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+  justify-content: space-between; /* Distribute space between title, text, and button */
+  height: 100%; 
+  background-color: #d280df31;/* Ensure the card body takes up the remaining space */
+}
+
+/* Style for the card title */
+.card-title {
+  font-size: 2rem; /* Increase the font size of the title */
+  margin-bottom: 10px; /* Add some space below the title */
+}
+
+/* Style for the card text */
+.card-text {
+  font-size: 1.5rem; /* Set the font size for the card text */
+  line-height: 1.5; /* Improve the line height for readability */
+  margin-bottom: auto; /* Push the text down to ensure it stays at the top of available space */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center; /* Center the cards */
+  }
+
+  .card {
+    flex: 1 1 100%; /* Ensure the cards take full width on smaller screens */
+    max-width: 100%; /* Adjust the maximum width for smaller screens */
+  }
+}
+
+   
+   
+
+.carousel-container
+{
+  background-color: rgba(105, 105, 105, 0.149);
+  padding-top: 100px;
+  margin-top: 100px;
+}
+
+.carousel-header {
+  font-size: 60px; 
+  text-align: center; 
+  line-height: 1.8; 
+}
+
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom :100px;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-image {
+  width: 100rem; 
+  height: 50rem; 
+  border-radius: 15px; ;
+   /* Adjust the border-radius as needed */
+}
+
+.carousel-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.button-image {
+  width: 50px; /* Adjust the button image size as needed */
+  height: 50px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .carousel-image {
+    max-width: 300px; /* Adjust for tablet size */
+  }
+
+  .carousel-button {
+    left: 5px;
+    right: 5px;
+  }
+
+  .button-image {
+    width: 25px; /* Adjust the button image size for tablets */
+    height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-image {
+    max-width: 100%; /* Adjust for mobile size */
+    height: auto;
+  }
+
+  .carousel-button {
+    left: 2px;
+    right: 2px;
+  }
+
+  .button-image {
+    width: 20px; /* Adjust the button image size for mobiles */
+    height: 20px;
+  }
+}
+
+.footer
+{
+  background-color: black;
+
+}
+
+.card-title1{
+  color: white;
+  font-size: 20px;
+
+}
+
+
+
+.card-text1{
+  color: pink;
+  font-size: 15px;
+}
